@@ -1,0 +1,11 @@
+# Preserve Authorization for Apache/PHP configurations that drop it.
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+# Includes still work; direct requests to connection/helper files are denied.
+<FilesMatch "^(db|auth|cors|reset_helpers|password_reset_worker|setup_reset_mail)\.php$">
+    Require all denied
+</FilesMatch>
+RedirectMatch 404 /\.git(?:/|$)
+
+<FilesMatch "\.(cmd|sql|md)$">
+    Require all denied
+</FilesMatch>

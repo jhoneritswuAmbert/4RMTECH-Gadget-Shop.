@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F7F9FC">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="80dp" android:orientation="horizontal" android:gravity="center_vertical" android:paddingHorizontal="20dp" android:paddingVertical="15dp" android:background="#FFFFFF">
+        <ImageView android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/ui_shop_logo" android:scaleType="fitCenter" android:contentDescription="4RMTECH" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4RMTECH" android:textColor="#0B1748" android:textSize="21sp" android:fontFamily="sans-serif" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ADMIN PORTAL" android:textColor="#637996" android:textSize="10sp" android:fontFamily="sans-serif" android:letterSpacing="0.12" android:layout_marginTop="3dp" />
+        </LinearLayout>
+        <Button android:id="@+id/btnLogout" android:layout_width="wrap_content" android:layout_height="48dp" android:minWidth="0dp" android:paddingHorizontal="14dp" android:text="Sign out" android:textAllCaps="false" android:textColor="#FFFFFF" android:textSize="13sp" android:background="@drawable/bg_ui_admin_outline" android:backgroundTint="#0B1748" android:elevation="0dp" app:backgroundTint="#0B1748" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DFE7F3" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:paddingBottom="28dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="4dp" android:paddingTop="16dp" android:paddingBottom="24dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SHOP CONTROL CENTRE" android:textColor="#7B9100" android:textSize="10sp" android:fontFamily="sans-serif" android:letterSpacing="0.12" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Welcome back, Admin" android:textColor="#0B1748" android:textSize="26sp" android:fontFamily="sans-serif" android:textStyle="bold" android:layout_marginTop="10dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Manage your catalog and repair queue." android:textColor="#637996" android:textSize="14sp" android:fontFamily="sans-serif" android:layout_marginTop="9dp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginHorizontal="4dp" app:cardCornerRadius="16dp" app:cardElevation="1dp" app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="142dp" android:orientation="vertical" android:padding="14dp">
+                        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:padding="10dp" android:src="@drawable/ic_products" android:background="@drawable/bg_ui_admin_icon" app:tint="#075CFF" android:importantForAccessibility="no" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="—" android:textColor="#0B1748" android:textSize="26sp" android:fontFamily="sans-serif" android:id="@+id/tvTotalProducts" android:textStyle="bold" android:layout_marginTop="10dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Products" android:textColor="#637996" android:textSize="11sp" android:fontFamily="sans-serif" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginHorizontal="4dp" app:cardCornerRadius="16dp" app:cardElevation="1dp" app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="142dp" android:orientation="vertical" android:padding="14dp">
+                        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:padding="10dp" android:src="@drawable/ic_categories" android:background="@drawable/bg_ui_admin_icon" app:tint="#075CFF" android:importantForAccessibility="no" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="—" android:textColor="#0B1748" android:textSize="26sp" android:fontFamily="sans-serif" android:id="@+id/tvTotalCategories" android:textStyle="bold" android:layout_marginTop="10dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Categories" android:textColor="#637996" android:textSize="11sp" android:fontFamily="sans-serif" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginHorizontal="4dp" app:cardCornerRadius="16dp" app:cardElevation="1dp" app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="142dp" android:orientation="vertical" android:padding="14dp">
+                        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:padding="10dp" android:src="@drawable/ic_customers" android:background="@drawable/bg_ui_admin_icon" app:tint="#075CFF" android:importantForAccessibility="no" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="—" android:textColor="#0B1748" android:textSize="26sp" android:fontFamily="sans-serif" android:id="@+id/tvTotalCustomers" android:textStyle="bold" android:layout_marginTop="10dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Customers" android:textColor="#637996" android:textSize="11sp" android:fontFamily="sans-serif" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@+id/cardPendingBanner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="4dp" android:layout_marginTop="18dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Needs your attention" android:textColor="#0B1748" android:textSize="17sp" android:fontFamily="sans-serif" android:textStyle="bold" />
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pending repair appointments" android:textColor="#637996" android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginTop="5dp" />
+                        </LinearLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#0B1748" android:textSize="24sp" android:fontFamily="sans-serif" android:id="@+id/tvPendingAppointments" android:layout_marginStart="12dp" android:gravity="center" android:padding="10dp" android:background="@drawable/bg_ui_admin_lime" android:textStyle="bold" android:minWidth="52dp" />
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Review appointments →" android:textColor="#003FA8" android:textSize="14sp" android:fontFamily="sans-serif" android:textStyle="bold" android:layout_marginTop="20dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Management" android:textColor="#0B1748" android:textSize="20sp" android:fontFamily="sans-serif" android:textStyle="bold" android:layout_marginTop="28dp" android:layout_marginStart="4dp" android:layout_marginBottom="6dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <androidx.cardview.widget.CardView android:id="@+id/cardProducts" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="5dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="156dp" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:padding="10dp" android:src="@drawable/ic_products" android:background="@drawable/bg_ui_admin_icon" app:tint="#075CFF" android:importantForAccessibility="no" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Products" android:textColor="#0B1748" android:textSize="16sp" android:fontFamily="sans-serif" android:textStyle="bold" android:layout_marginTop="14dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Manage stock &amp; prices" android:textColor="#637996" android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginTop="5dp" android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/cardCategories" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="5dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="156dp" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:padding="10dp" android:src="@drawable/ic_categories" android:background="@drawable/bg_ui_admin_icon" app:tint="#075CFF" android:importantForAccessibility="no" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Categories" android:textColor="#0B1748" android:textSize="16sp" android:fontFamily="sans-serif" android:textStyle="bold" android:layout_marginTop="14dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Organize your catalog" android:textColor="#637996" android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginTop="5dp" android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <androidx.cardview.widget.CardView android:id="@+id/cardAppointments" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="5dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="156dp" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:padding="10dp" android:src="@drawable/ic_appointments" android:background="@drawable/bg_ui_admin_icon" app:tint="#075CFF" android:importantForAccessibility="no" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Appointments" android:textColor="#0B1748" android:textSize="16sp" android:fontFamily="sans-serif" android:textStyle="bold" android:layout_marginTop="14dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Review repair bookings" android:textColor="#637996" android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginTop="5dp" android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/cardCustomers" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="5dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="#FFFFFF">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="156dp" android:orientation="vertical" android:padding="18dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:padding="10dp" android:src="@drawable/ic_customers" android:background="@drawable/bg_ui_admin_icon" app:tint="#075CFF" android:importantForAccessibility="no" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Customers" android:textColor="#0B1748" android:textSize="16sp" android:fontFamily="sans-serif" android:textStyle="bold" android:layout_marginTop="14dp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="View customer records" android:textColor="#637996" android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginTop="5dp" android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@+id/cardInquiries" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="92dp" android:orientation="horizontal" android:gravity="center_vertical" android:padding="18dp">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:padding="10dp" android:src="@drawable/ic_inquiries" android:background="@drawable/bg_ui_admin_icon" app:tint="#075CFF" android:importantForAccessibility="no" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Inquiries" android:textColor="#0B1748" android:textSize="16sp" android:fontFamily="sans-serif" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Read messages from customers" android:textColor="#637996" android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginTop="5dp" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/tvInquiryBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:paddingStart="9dp" android:paddingEnd="9dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:background="@drawable/bg_inquiry_badge" android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" android:text="0 new" android:visibility="gone" />
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_chevron_right" app:tint="#0B1748" android:importantForAccessibility="no" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4RMTECH · ADMIN WORKSPACE" android:textColor="#7A8DA8" android:textSize="10sp" android:fontFamily="sans-serif" android:gravity="center" android:letterSpacing="0.08" android:layout_marginTop="25dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

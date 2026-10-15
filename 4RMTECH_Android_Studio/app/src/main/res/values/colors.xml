@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors -->
+    <color name="navy">#06174A</color>
+    <color name="navy_light">#0A2472</color>
+    <color name="navy_50">#EEF0F8</color>
+    <color name="accent">#2563EB</color>
+    <color name="accent_light">#EFF6FF</color>
+
+    <!-- Backgrounds -->
+    <color name="surface">#F5F7FA</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="text_dark">#1A1A1A</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_muted">#9CA3AF</color>
+
+    <!-- Borders -->
+    <color name="border">#E5E7EB</color>
+    <color name="divider">#F3F4F6</color>
+
+    <!-- Status colors -->
+    <color name="status_pending">#F59E0B</color>
+    <color name="status_pending_bg">#FFF7ED</color>
+    <color name="status_approved">#10B981</color>
+    <color name="status_approved_bg">#F0FDF4</color>
+    <color name="status_completed">#2563EB</color>
+    <color name="status_completed_bg">#EFF6FF</color>
+    <color name="status_cancelled">#EF4444</color>
+    <color name="status_cancelled_bg">#FFF1F2</color>
+
+    <!-- Feature card backgrounds -->
+    <color name="card_blue_bg">#EFF6FF</color>
+    <color name="card_orange_bg">#FFF7ED</color>
+    <color name="card_green_bg">#F0FDF4</color>
+    <color name="card_purple_bg">#FDF4FF</color>
+
+    <!-- Material theme -->
+    <color name="colorPrimary">#06174A</color>
+    <color name="colorPrimaryVariant">#0A2472</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#2563EB</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorBackground">#F5F7FA</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorError">#EF4444</color>
+
+    <color name="brand_navy">#0A1450</color>
+    <color name="brand_navy_light">#12206B</color>
+    <color name="brand_lime">#C8E60F</color>
+    <color name="brand_muted">#B3FFFFFF</color>
+    <color name="brand_divider">#26FFFFFF</color>
+    <color name="lime_soft">#F3F9CE</color>
+
+</resources>
+
+

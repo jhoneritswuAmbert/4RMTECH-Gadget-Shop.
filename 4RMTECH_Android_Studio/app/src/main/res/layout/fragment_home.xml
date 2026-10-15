@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="76dp" android:orientation="horizontal" android:gravity="center_vertical" android:padding="18dp" android:background="@color/white">
+            <ImageView android:layout_width="42dp" android:layout_height="42dp" android:src="@drawable/ui_shop_logo" android:scaleType="fitCenter" android:contentDescription="4RMTECH"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4RMTECH" android:textSize="21sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GADGET SHOP and REPAIR SERVICES" android:textSize="9sp" android:textColor="@color/text_secondary" android:letterSpacing="0.04" android:layout_marginTop="3dp"/>
+            </LinearLayout>
+            <ImageButton android:id="@+id/btnNotification" android:layout_width="48dp" android:layout_height="48dp" android:src="@android:drawable/ic_menu_info_details" app:tint="@color/navy" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Shop information"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WELCOME BACK" android:textSize="10sp" android:textColor="@color/text_secondary" android:letterSpacing="0.12"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Your account" android:textSize="25sp" android:textColor="@color/navy" android:id="@+id/tvUserName" android:textStyle="bold" android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16dp" app:cardCornerRadius="22dp" app:cardElevation="1dp" app:cardBackgroundColor="@color/navy">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <ImageView android:layout_width="match_parent" android:layout_height="164dp" android:src="@drawable/ui_repair_workshop" android:scaleType="centerCrop" android:contentDescription="Technician repairing a device"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GADGETS and REPAIR SERVICES" android:textSize="10sp" android:textColor="@color/brand_lime" android:textStyle="bold" android:letterSpacing="0.08"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gadgets you can inspect. Repairs you can trust." android:textSize="27sp" android:textColor="@color/white" android:textStyle="bold" android:layout_marginTop="10dp" android:lineSpacingExtra="2dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Browse our stock, visit the shop, or book your next repair." android:textSize="14sp" android:textColor="@color/brand_muted" android:layout_marginTop="12dp" android:lineSpacingExtra="3dp"/>
+                    <Button android:id="@+id/btnShopNow" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:layout_marginTop="18dp" android:text="Browse products" android:textAllCaps="false" android:textColor="#0B1748" android:textSize="15sp" android:fontFamily="sans-serif-medium" android:background="@drawable/bg_button_primary" android:backgroundTint="#CEE800" app:backgroundTint="#CEE800"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="What do you need today?" android:textSize="20sp" android:textColor="@color/navy" android:textStyle="bold" android:paddingStart="20dp" android:layout_marginTop="28dp" android:layout_marginBottom="8dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingHorizontal="10dp">
+            <androidx.cardview.widget.CardView android:id="@+id/cardProducts" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="170dp" android:layout_weight="1" android:layout_margin="6dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="@color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <ImageView android:layout_width="match_parent" android:layout_height="96dp" android:src="@drawable/ui_smartphones" android:scaleType="centerCrop" android:contentDescription="Products"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Products" android:textSize="15sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Browse our catalog" android:textSize="12sp" android:textColor="@color/text_secondary" android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@+id/cardRepair" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="170dp" android:layout_weight="1" android:layout_margin="6dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="@color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <ImageView android:layout_width="match_parent" android:layout_height="96dp" android:src="@drawable/ui_repair_workshop" android:scaleType="centerCrop" android:contentDescription="Repair Services"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Repair Services" android:textSize="15sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Find help for your device" android:textSize="12sp" android:textColor="@color/text_secondary" android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingHorizontal="10dp">
+            <androidx.cardview.widget.CardView android:id="@+id/cardAppointments" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="170dp" android:layout_weight="1" android:layout_margin="6dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="@color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <ImageView android:layout_width="match_parent" android:layout_height="96dp" android:src="@drawable/ic_appointments" android:scaleType="centerInside" android:contentDescription="Appointments" android:background="#EAF2FF" android:padding="28dp" app:tint="#075CFF"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Appointments" android:textSize="15sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Track your bookings" android:textSize="12sp" android:textColor="@color/text_secondary" android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@+id/cardProfile" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="170dp" android:layout_weight="1" android:layout_margin="6dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="@color/white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <ImageView android:layout_width="match_parent" android:layout_height="96dp" android:src="@android:drawable/ic_menu_myplaces" android:scaleType="centerInside" android:contentDescription="My Profile" android:background="#EAF2FF" android:padding="28dp" app:tint="#075CFF"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="My Profile" android:textSize="15sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Manage your account" android:textSize="12sp" android:textColor="@color/text_secondary" android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:id="@+id/cardInquiry" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16dp" android:layout_marginTop="14dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:cardBackgroundColor="#F3F9CE">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Questions? We can help." android:textSize="18sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Read the FAQs or send an inquiry." android:textSize="13sp" android:textColor="@color/text_secondary" android:layout_marginTop="6dp"/>
+                </LinearLayout>
+                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_chevron_right" app:tint="@color/navy" android:importantForAccessibility="no"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginHorizontal="16dp" android:layout_marginTop="24dp" android:padding="20dp" android:background="@drawable/bg_ui_form">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Your repair, in four steps" android:textSize="18sp" android:textColor="@color/navy" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. Book online 2. Wait for confirmation 3. Drop off your device 4. Pay onsite after the repair" android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="12dp" android:lineSpacingExtra="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="View my appointments →" android:textSize="14sp" android:textColor="@color/accent" android:id="@+id/btnViewAll" android:layout_marginTop="12dp" android:paddingVertical="12dp" android:minHeight="48dp" android:textStyle="bold" android:clickable="true" android:focusable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

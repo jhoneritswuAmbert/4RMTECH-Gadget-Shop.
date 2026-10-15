@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@color/card_orange_bg" />
+
+            <TextView
+                android:id="@+id/tvServiceName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Smartphone Repair"
+                android:textColor="@color/navy"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-bold"
+                android:layout_marginStart="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvServiceDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Screen, battery, charging port, water damage, software issues"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.4" />
+
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="14dp"
+            android:text="Book Appointment"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/bg_button_primary" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

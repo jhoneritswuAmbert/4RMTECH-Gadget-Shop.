@@ -1,0 +1,34 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="78dp" android:orientation="horizontal" android:gravity="center_vertical" android:padding="14dp" android:background="@color/navy">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp" android:src="@android:drawable/ic_menu_revert" app:tint="@color/white" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Back"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Inquiries and FAQs" android:textSize="22sp" android:textColor="@color/white" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="HOW CAN WE HELP?" android:textSize="10sp" android:textColor="@color/brand_lime" android:letterSpacing="0.08" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Send an inquiry" android:textSize="23sp" android:textColor="@color/navy" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tell us your device model and what you need help with. Our team will review your message." android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="8dp" android:lineSpacingExtra="3dp"/>
+            <EditText android:id="@+id/etMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="160dp" android:layout_marginTop="20dp" android:gravity="top|start" android:hint="Describe your question or device issue…" android:inputType="textMultiLine|textCapSentences" android:maxLength="1000" android:padding="16dp" android:textSize="16sp" android:textColor="@color/text_dark" android:textColorHint="@color/text_muted" android:background="@drawable/bg_ui_form"/>
+            <Button android:id="@+id/btnSubmit" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:layout_marginTop="16dp" android:text="Send Inquiry" android:textAllCaps="false" android:textColor="#0B1748" android:textSize="16sp" android:background="@drawable/bg_button_primary" android:backgroundTint="#CEE800" app:backgroundTint="#CEE800"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Frequently Asked Questions" android:textSize="21sp" android:textColor="@color/navy" android:textStyle="bold" android:layout_marginTop="32dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp" android:padding="18dp" android:background="@drawable/bg_ui_form">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Can I buy a gadget through the app?" android:textSize="15sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Browse products in the app, then visit the shop to inspect the device and pay at the counter." android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="8dp" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp" android:padding="18dp" android:background="@drawable/bg_ui_form">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="How do I book or check a repair?" android:textSize="15sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Open Repair Services to book a repair. Open Bookings to check its status. Pending bookings can be cancelled." android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="8dp" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp" android:padding="18dp" android:background="@drawable/bg_ui_form">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="How much will my repair cost?" android:textSize="15sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Our team confirms the cost and turnaround after assessing your device. Include the device model and symptoms in your inquiry." android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="8dp" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp" android:padding="18dp" android:background="@drawable/bg_ui_form">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="What if I forgot my password?" android:textSize="15sp" android:textColor="@color/navy" android:textStyle="bold"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Select Forgot password on the customer login screen, verify the code sent to your registered email, then save a new password." android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="8dp" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

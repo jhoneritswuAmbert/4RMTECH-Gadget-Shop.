@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/surface">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_header_gradient"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@android:drawable/ic_media_previous"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Products"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-bold" />
+
+    </LinearLayout>
+
+    <!-- Search -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Search products..."
+            android:singleLine="true"
+            android:textColor="@color/brand_navy"
+            android:textColorHint="@color/brand_muted" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Categories -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAll"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:text="All"
+                android:textColor="@color/brand_navy"
+                app:chipBackgroundColor="@color/brand_lime"
+                app:chipCornerRadius="19dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSmartphones"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:text="Smartphones"
+                android:textColor="@color/brand_navy"
+                app:chipBackgroundColor="@color/white"
+                app:chipCornerRadius="19dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipLaptops"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:text="Laptops"
+                android:textColor="@color/brand_navy"
+                app:chipBackgroundColor="@color/white"
+                app:chipCornerRadius="19dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAccessories"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:text="Accessories"
+                android:textColor="@color/brand_navy"
+                app:chipBackgroundColor="@color/white"
+                app:chipCornerRadius="19dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipParts"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="Parts"
+                android:textColor="@color/brand_navy"
+                app:chipBackgroundColor="@color/white"
+                app:chipCornerRadius="19dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Featured Products"
+        android:textColor="@color/brand_navy"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-bold" />
+
+    <!-- Product List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="90dp"
+        android:clipToPadding="false" />
+
+    <!-- Add Product -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        android:contentDescription="Add product"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/brand_lime"
+        app:tint="@color/brand_navy" />
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">4RM TECH</string>
+    <string name="app_tagline">Gadget Shop &amp; Repair Services</string>
+
+    <!-- Login -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="tab_customer">Customer</string>
+    <string name="tab_admin">Admin</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_login_admin">Login as Admin</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="create_account">Create Account</string>
+
+    <!-- Register -->
+    <string name="join_fourm_tech">Join 4RM TECH</string>
+    <string name="register_subtitle">Register to access our gadget shop &amp; repair services</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_contact">Contact Number</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="btn_register">Create Account</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="btn_login_link">Login</string>
+
+    <!-- Home -->
+    <string name="welcome_back_user">Welcome back,</string>
+    <string name="what_do_you_need">What do you need today?</string>
+    <string name="recent_activity">Recent Activity</string>
+    <string name="view_all">View all</string>
+    <string name="new_arrivals">New Arrivals This Week</string>
+    <string name="shop_now">Shop Now</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_products">Products</string>
+    <string name="nav_bookings">Bookings</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Products -->
+    <string name="products">Products</string>
+    <string name="search_products">Search products…</string>
+    <string name="btn_view_details">View Details</string>
+    <string name="available_in_store">Available In Store</string>
+    <string name="in_stock">In Stock</string>
+    <string name="low_stock">Low Stock</string>
+    <string name="out_of_stock">Out of Stock</string>
+
+    <!-- Repair -->
+    <string name="repair_services">Repair Services</string>
+    <string name="schedule_a_repair">Schedule a Repair</string>
+    <string name="btn_book_appointment">Book Appointment</string>
+
+    <!-- Appointment -->
+    <string name="book_appointment">Book Repair Appointment</string>
+    <string name="btn_submit">Submit Appointment</string>
+    <string name="appointment_submitted">Appointment Submitted!</string>
+    <string name="appointment_success_msg">Your repair appointment has been submitted successfully. We will review and confirm shortly.</string>
+    <string name="my_appointments">My Appointments</string>
+    <string name="btn_book_new">+ Book New Appointment</string>
+
+    <!-- Profile -->
+    <string name="my_profile">My Profile</string>
+    <string name="account_info">Account Information</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+    <string name="btn_change_password">Change Password</string>
+    <string name="btn_logout">Logout</string>
+
+    <!-- Admin -->
+    <string name="admin_panel">Admin Panel</string>
+    <string name="manage">Manage</string>
+    <string name="search_customers">Search customers…</string>
+    <string name="search_appointments">Search appointments…</string>
+    <string name="btn_add_product">Add Product</string>
+    <string name="btn_save_product">Save Product</string>
+    <string name="btn_add_category">Add Category</string>
+    <string name="btn_approve">Approve</string>
+    <string name="btn_complete">Mark Complete</string>
+    <string name="btn_cancel_appt">Cancel</string>
+    <string name="total_products">Total Products</string>
+    <string name="total_categories">Categories</string>
+    <string name="pending_appointments">Pending Appts</string>
+    <string name="total_customers">Customers</string>
+</resources>

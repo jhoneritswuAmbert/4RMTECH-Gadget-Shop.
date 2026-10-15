@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FourRMTech"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.AdminInquiriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CategoryDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="false" />
+
+        <!-- Splash -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FourRMTech.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Auth -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false" />
+
+        <!-- Customer -->
+        <activity
+            android:name=".activities.CustomerHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RepairServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.BookAppointmentActivity"
+            android:exported="false" />
+
+        <!-- Admin -->
+        <activity
+            android:name=".activities.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminCustomersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CustomerInquiryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

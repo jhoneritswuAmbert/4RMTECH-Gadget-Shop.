@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_header_gradient" android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="16dp" android:paddingBottom="16dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="My Appointments" android:textColor="@color/white" android:textSize="20sp" android:fontFamily="sans-serif" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Track your repair services" android:textColor="#B3FFFFFF" android:textSize="12sp" android:layout_marginTop="2dp" />
+        </LinearLayout>
+        <Button android:id="@+id/btnBookNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+ Book" android:textColor="#0B1748" android:textSize="12sp" android:background="@drawable/bg_button_primary" android:paddingStart="12dp" android:paddingEnd="12dp" android:textAllCaps="false" android:letterSpacing="0.01" android:fontFamily="sans-serif-medium" android:minHeight="52dp" android:backgroundTint="#CEE800" app:backgroundTint="#CEE800" />
+    </LinearLayout>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:layout_marginTop="12dp" android:paddingStart="16dp" android:paddingEnd="16dp" android:clipToPadding="false">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <com.google.android.material.chip.Chip android:id="@+id/chipAll" android:layout_width="wrap_content" android:layout_height="36dp" android:text="All" android:layout_marginEnd="8dp" style="@style/Widget.MaterialComponents.Chip.Filter" app:chipBackgroundColor="@color/navy" android:textColor="@color/white" />
+            <com.google.android.material.chip.Chip android:id="@+id/chipPending" android:layout_width="wrap_content" android:layout_height="36dp" android:text="Pending" android:layout_marginEnd="8dp" style="@style/Widget.MaterialComponents.Chip.Filter" />
+            <com.google.android.material.chip.Chip android:id="@+id/chipApproved" android:layout_width="wrap_content" android:layout_height="36dp" android:text="Approved" android:layout_marginEnd="8dp" style="@style/Widget.MaterialComponents.Chip.Filter" />
+            <com.google.android.material.chip.Chip android:id="@+id/chipReadyToClaim" android:layout_width="wrap_content" android:layout_height="38dp" android:layout_marginEnd="8dp" android:text="Ready to Claim" android:textColor="#7E22CE" style="@style/Widget.MaterialComponents.Chip.Filter" app:chipBackgroundColor="#F3E8FF" />
+            <com.google.android.material.chip.Chip android:id="@+id/chipCompleted" android:layout_width="wrap_content" android:layout_height="36dp" android:text="Completed" android:layout_marginEnd="8dp" style="@style/Widget.MaterialComponents.Chip.Filter" />
+            <com.google.android.material.chip.Chip android:id="@+id/chipCancelled" android:layout_width="wrap_content" android:layout_height="36dp" android:text="Cancelled" style="@style/Widget.MaterialComponents.Chip.Filter" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvAppointments" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="12dp" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingBottom="16dp" android:clipToPadding="false" />
+</LinearLayout>
