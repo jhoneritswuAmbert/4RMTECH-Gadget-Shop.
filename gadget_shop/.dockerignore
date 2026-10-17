@@ -1,0 +1,9 @@
+.git
+.env
+.env.*
+db.php
+mail_config.php
+test_db.php
+*.log
+*.backup
+*.dump
