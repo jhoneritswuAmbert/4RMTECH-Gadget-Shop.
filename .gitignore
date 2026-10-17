@@ -16,3 +16,5 @@ db.php
 *.zip
 *.backup
 *.dump
+
+gadget_shop/test_db.php
