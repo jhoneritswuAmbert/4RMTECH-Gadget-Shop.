@@ -3,7 +3,8 @@ $origin = $_SERVER["HTTP_ORIGIN"] ?? "";
 
 $allowedOrigins = [
     "http://localhost:5173",
-    "http://127.0.0.1:5173"
+    "http://127.0.0.1:5173",
+    'https://fourrmtech-web.onrender.com'
 ];
 
 if (in_array($origin, $allowedOrigins, true)) {
