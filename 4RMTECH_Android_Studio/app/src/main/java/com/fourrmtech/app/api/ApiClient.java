@@ -8,7 +8,7 @@ import com.fourrmtech.app.api.ApiClient;
 public class ApiClient {
 
     private static final String BASE_URL =
-            "http://10.0.2.2/gadget_shop/";
+            "https://fourrmtech-api.onrender.com/gadget_shop/";
     public static String getBaseUrl() { return BASE_URL; }
     private static Retrofit retrofit;
 
